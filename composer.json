@@ -1,0 +1,69 @@
+{
+    "name": "microscrap/evdev",
+    "description": "Linux evdev (input event) Bindings for The PHP Posi Extension",
+    "type": "library",
+    "version": "0.8.0",
+    "keywords": [
+        "evdev",
+        "input",
+        "gamepad",
+        "posi",
+        "bindings"
+    ],
+    "license": "MIT",
+    "homepage": "https://scrapyard-io.projectsaturnstudios.com/ecosystem/microscrap/evdev/0.8.x/overview",
+    "support": {
+        "docs": "https://scrapyard-io.projectsaturnstudios.com/ecosystem/microscrap/evdev/0.8.x/overview",
+        "source": "https://github.com/microscrap/evdev",
+        "issues": "https://github.com/microscrap/evdev/issues"
+    },
+    "authors": [
+        {
+            "name": "Angel Gonzalez",
+            "email": "angel@projectsaturnstudios.com"
+        }
+    ],
+    "require": {
+        "php": "^8.4|^8.5|^8.6",
+        "ext-posi": "^0.8.0",
+        "microscrap/posix": "^0.8.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Microscrap\\Bindings\\Evdev\\": "src/"
+        },
+        "files": [
+            "src/Helpers/evdev.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Microscrap\\Bindings\\Evdev\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.8.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/Volumes/ProjectSaturnStudios/Development/PHP/ProjectSaturnStudios/dev/microscrap/posix",
+            "options": {
+                "symlink": true
+            }
+        }
+    ]
+}
